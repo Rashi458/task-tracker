@@ -29,11 +29,22 @@ const Login = () => {
       if (response.status === 200) {
         navigate("/Dashboard");
       } else {
-        setErrorMessage(response.data.message);
+        // Handle unexpected status code
+        setErrorMessage("An unexpected error occurred");
       }
     } catch (error) {
-      console.log("Something went wrong" + error.message);
-      setErrorMessage("An unexpected error occurred");
+      // Handle errors that occurred during the API call
+      if (error.response) {
+        // The request was made and the server responded with a status code
+        // that falls out of the range of 2xx
+        setErrorMessage(error.response.data.message);
+      } else if (error.request) {
+        // The request was made but no response was received
+        setErrorMessage("No response from the server");
+      } else {
+        // Something happened in setting up the request that triggered an Error
+        setErrorMessage("An unexpected error occurred");
+      }
     }
   };
 
