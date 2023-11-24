@@ -3,11 +3,11 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 
-app.use('cors');
+app.use(cors());
 
 // Load config from env file --
 require("dotenv").config();
-const port = process.env.PORT|| 4000;
+const port = process.env.PORT|| 8000;
 
 // middleware to parse json request body(express.json is middleware here)
 app.use(express.json());
