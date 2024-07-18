@@ -1,7 +1,18 @@
 Task Tracker - 
 A Personalized Web Application for efficient task management with categorization of tasks for each user and storing it in database.
 
-– Tech Stack: HTML , CSS , JavaScript , Node.js , MongoDB , React.js
+
+Technology used :-
+
+- HTML: "Structures content for the web."
+- CSS: "Styles and layouts web pages."
+- JavaScript: "Adds interactivity to web pages."
+  
+- Node.js: "Runs server-side JavaScript."
+- MongoDB: "Stores and manages data in a NoSQL database."
+- React.js: "Builds reusable UI components."
+
+Features :-
 
 - Basic Functionalities like login , signup and an interactive user interface 
 
@@ -10,7 +21,8 @@ A Personalized Web Application for efficient task management with categorization
 - Integrated a drag and drop functionality for seamless task organisation and prioritization, enhancing user experience.
 
 
-Future Scope - 
+Future Scope :- 
+
 
 Integration with calendar to set deadlines for the tasks.
 
